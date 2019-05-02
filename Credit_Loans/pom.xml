@@ -16,7 +16,7 @@
 
   <name>Funktion Example Java</name>
   <description>Funktion :: Examples :: Java</description>
-</project>
+
 
 <build>
 	<plugins>
@@ -32,4 +32,4 @@
 		
 	</plugins>
   </build>	
-
+</project>
