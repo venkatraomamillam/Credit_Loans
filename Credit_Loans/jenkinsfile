@@ -10,15 +10,7 @@ pipeline {
          }
       }
      
-     stage('change directory'){
-     steps {
-          sh "$PWD"
-          dir('Credit_Loans'){
-            sh "$PWD"
-          }
-          sh "$PWD"
-        }
-     } 
+     
       
    stage('Maven Build') {
          steps {
