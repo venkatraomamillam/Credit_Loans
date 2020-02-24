@@ -9,15 +9,18 @@ pipeline {
             git credentialsId: 'venkat', url: 'https://github.com/venkatraomamillam/Project1.git'
          }
       }
-      
-   stage('Maven Build') {
-         steps {
+     
+     stage('change directory'){
+     steps {
           sh "$PWD"
           dir('Credit_Loans'){
             sh "$PWD"
           }
           sh "$PWD"
         }
+     } 
+      
+   stage('Maven Build') {
          steps {
             sh "mvn clean package"
          }
