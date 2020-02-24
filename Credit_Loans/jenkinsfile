@@ -9,6 +9,16 @@ pipeline {
             git credentialsId: 'venkat', url: 'https://github.com/venkatraomamillam/Credit_Loans.git'
          }
       }
+      
+      stage('change Directory'){
+         steps {
+          sh "$PWD"
+          dir('Credit_Loans'){
+            sh "$PWD"
+             }
+          sh "$PWD"
+          } 
+      }
     
      
       
